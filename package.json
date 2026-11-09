@@ -4,9 +4,10 @@
    "description": "GitHub Actions CI Demo",
    "main": "server.js",
    "scripts": {
-      "start": "node server.js",
-      "test": "jest"
-   },
+    "start": "node server.js",
+    "test": "jest",
+    "lint": "eslint ."
+},
    "repository": {
       "type": "git",
       "url": "git+https://github.com/David-Franz-Soliz-Ortega/github-actions-ci-demo.git"
@@ -18,9 +19,11 @@
    },
    "homepage": "https://github.com/David-Franz-Soliz-Ortega/github-actions-ci-demo#readme",
    "dependencies": {
-      "express":"^5.2.1"
+      "express": "^5.2.1"
    },
    "devDependencies": {
+      "eslint": "^10.14.0",
+      "globals": "^17.14.0",
       "jest": "^30.5.2",
       "supertest": "^7.2.2"
    }
